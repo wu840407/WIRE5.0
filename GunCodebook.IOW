@@ -1,0 +1,16 @@
+"event":
+[
+  "Login":{"Account":"VARCHAR(20)","Password":"VARCHAR(20)","Password":"UNSIGNED INTEGER"},
+  "QueryPW":{"Account":"VARCHAR(20)","UserName":"VARCHAR(20)","EncryptID":"UNSIGNED INTEGER"},
+  "Register":{"UserName":"VARCHAR(20)","Account":"VARCHAR(20)","Password":"VARCHAR(20)","EncryptID":"UNSIGNED INTEGER"},
+  "QueryUser":{"UserID":"UNSIGNED INTEGER","EncryptID":"UNSIGNED INTEGER"},
+  "JoinResult":{"UserID":"UNSIGNED INTEGER","EncryptID":"UNSIGNED INTEGER"},
+  "QueryResult":{"Password":"VARCHAR(20)","EncryptID":"UNSIGNED INTEGER"},
+  "RegisterResult":{"Success":"INTEGER","EncryptID":"UNSIGNED INTEGER"},
+  "UserInfo":{"UserName":"VARCHAR(20)","Department":"VARCHAR(20)","Rank":"VARCHAR(20)","Score":"UNSIGNED INTEGER","Rounds":"UNSIGNED INTEGER","EncryptID":"UNSIGNED INTEGER"}
+]
+"object":
+[
+  "PlayerInfo":{"UserID":"UNSIGNED INTEGER","BoutCount":"UNSIGNED INTEGER","CurrentScore":"UNSIGNED INTEGER"},
+  "ScoreBoard":{"Number":"UNSIGNED INTEGER","Gun":"VARCHAR(20)","Account":"VARCHAR(20)","UserName":"VARCHAR(20)","CompleteTime":"UNSIGNED INTEGER","Score":"UNSIGNED INTEGER"}
+]

@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9CB9CF6-A406-3F84-A382-9361B7CDF1B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.3.3f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets\Plugins\I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>Assets\Plugins\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.MidEast">
+      <HintPath>Assets\Plugins\I18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Other">
+      <HintPath>Assets\Plugins\I18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Rare">
+      <HintPath>Assets\Plugins\I18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>Assets\Plugins\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets\Plugins\System.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="WIRE5.0.CSharp.Plugins.csproj">
+      <Project>{AA261739-FAB0-B018-B623-A847D829F3C9}</Project>
+      <Name>WIRE5.0.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\DataBaseLogin.cs" />
+    <Compile Include="Assets\LM\LeapC\Arm.cs" />
+    <Compile Include="Assets\LM\LeapC\Bone.cs" />
+    <Compile Include="Assets\LM\LeapC\CSharpExtensions.cs" />
+    <Compile Include="Assets\LM\LeapC\CircularObjectBuffer.cs" />
+    <Compile Include="Assets\LM\LeapC\ClockCorrelator.cs" />
+    <Compile Include="Assets\LM\LeapC\Config.cs" />
+    <Compile Include="Assets\LM\LeapC\Connection.cs" />
+    <Compile Include="Assets\LM\LeapC\Controller.cs" />
+    <Compile Include="Assets\LM\LeapC\Device.cs" />
+    <Compile Include="Assets\LM\LeapC\DeviceList.cs" />
+    <Compile Include="Assets\LM\LeapC\DistortionData.cs" />
+    <Compile Include="Assets\LM\LeapC\DistortionDictionary.cs" />
+    <Compile Include="Assets\LM\LeapC\Events.cs" />
+    <Compile Include="Assets\LM\LeapC\FailedDevice.cs" />
+    <Compile Include="Assets\LM\LeapC\FailedDeviceList.cs" />
+    <Compile Include="Assets\LM\LeapC\Finger.cs" />
+    <Compile Include="Assets\LM\LeapC\Frame.cs" />
+    <Compile Include="Assets\LM\LeapC\Hand.cs" />
+    <Compile Include="Assets\LM\LeapC\IController.cs" />
+    <Compile Include="Assets\LM\LeapC\Image.cs" />
+    <Compile Include="Assets\LM\LeapC\ImageData.cs" />
+    <Compile Include="Assets\LM\LeapC\ImageFuture.cs" />
+    <Compile Include="Assets\LM\LeapC\InteractionBox.cs" />
+    <Compile Include="Assets\LM\LeapC\LeapC.cs" />
+    <Compile Include="Assets\LM\LeapC\LeapQuaternion.cs" />
+    <Compile Include="Assets\LM\LeapC\LeapTransform.cs" />
+    <Compile Include="Assets\LM\LeapC\Logger.cs" />
+    <Compile Include="Assets\LM\LeapC\Matrix.cs" />
+    <Compile Include="Assets\LM\LeapC\MessageSeverity.cs" />
+    <Compile Include="Assets\LM\LeapC\ObjectPool.cs" />
+    <Compile Include="Assets\LM\LeapC\PendingImages.cs" />
+    <Compile Include="Assets\LM\LeapC\PooledObject.cs" />
+    <Compile Include="Assets\LM\LeapC\ServiceFrameFactory.cs" />
+    <Compile Include="Assets\LM\LeapC\StructMarshal.cs" />
+    <Compile Include="Assets\LM\LeapC\TimeBracket.cs" />
+    <Compile Include="Assets\LM\LeapC\Vector.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\HandFactory.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\HandPool.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\HandProxy.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\HandRepresentation.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\CapsuleHand.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\DebugHand.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\FingerModel.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\HandDrop.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\HandEnableDisable.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\HandFader.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\HandModel.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\HandTransitionBehavior.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\IHandModel.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\RigidFinger.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\RigidHand.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\SkeletalFinger.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\SkeletalHand.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Hands\TestHandFactory.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\LeapDeviceInfo.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\LeapHandController.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\LeapImageRetriever.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\LeapProvider.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\LeapServiceProvider.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\DisconnectionNotice.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\EnableDepthBuffer.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\ExecutionOrder.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\FitHeightToScreen.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\FrameRateControls.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\KeyEnableBehaviors.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\KeyEnableGameObjects.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\LeapUnityExtensions.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\SceneSettings.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\SmoothedFloat.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\SmoothedQuaternion.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\SmoothedVector3.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\VR\EyeType.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\VR\LeapVRCameraControl.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\VR\LeapVRTemporalWarping.cs" />
+    <Compile Include="Assets\LM\LeapMotion\Scripts\VR\TemporalWarpingStatus.cs" />
+    <Compile Include="Assets\LM\MyScripts\Grab.cs" />
+    <Compile Include="Assets\LM\MyScripts\Guide.cs" />
+    <Compile Include="Assets\LM\MyScripts\ObjectToucher.cs" />
+    <Compile Include="Assets\LM\MyScripts\PinchRecognizer.cs" />
+    <Compile Include="Assets\LM\MyScripts\ToucherContainer.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\EnvelopContent.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorPickerColor.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIShowControlScheme.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\PropertyBinding.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIBasicSprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIColorPicker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIInputOnGUI.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\ResetGunPosition.cs" />
+    <Compile Include="Assets\Resourse\Scoreboard\myScript\UIGird\GameData.cs" />
+    <Compile Include="Assets\Resourse\Scoreboard\myScript\UIGird\MyItem.cs" />
+    <Compile Include="Assets\Resourse\Scoreboard\myScript\UIGird\NGUIController.cs" />
+    <Compile Include="Assets\Resourse\SimpleCloudSystem by RM\SceneComponents\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Script\Button.cs" />
+    <Compile Include="Assets\Script\ButtonText.cs" />
+    <Compile Include="Assets\Script\Buttonback.cs" />
+    <Compile Include="Assets\Script\Change.cs" />
+    <Compile Include="Assets\Script\Change1.cs" />
+    <Compile Include="Assets\Script\Change2.cs" />
+    <Compile Include="Assets\Script\Change3.cs" />
+    <Compile Include="Assets\Script\Change4.cs" />
+    <Compile Include="Assets\Script\Changeback.cs" />
+    <Compile Include="Assets\Script\Check.cs" />
+    <Compile Include="Assets\Script\CloseKeyboard.cs" />
+    <Compile Include="Assets\Script\CloseOption.cs" />
+    <Compile Include="Assets\Script\CombineEnded.cs" />
+    <Compile Include="Assets\Script\CreateAccount.cs" />
+    <Compile Include="Assets\Script\ForgetPassword.cs" />
+    <Compile Include="Assets\Script\Gun.cs" />
+    <Compile Include="Assets\Script\GunBack.cs" />
+    <Compile Include="Assets\Script\GunPanel.cs" />
+    <Compile Include="Assets\Script\GunRecall.cs" />
+    <Compile Include="Assets\Script\GunRotate.cs" />
+    <Compile Include="Assets\Script\Login.cs" />
+    <Compile Include="Assets\Script\MainProcess.cs" />
+    <Compile Include="Assets\Script\Mainbutton.cs" />
+    <Compile Include="Assets\Script\PanelEnable.cs" />
+    <Compile Include="Assets\Script\Show.cs" />
+    <Compile Include="Assets\Script\SurvivalTimer.cs" />
+    <Compile Include="Assets\Script\UserLogin.cs" />
+    <Compile Include="Assets\Script\UserSearch.cs" />
+    <Compile Include="Assets\Script\UserUI.cs" />
+    <Compile Include="Assets\Script\back.cs" />
+    <Compile Include="Assets\Script\cTime.cs" />
+    <Compile Include="Assets\Script\defeat.cs" />
+    <Compile Include="Assets\Script\score.cs" />
+    <Compile Include="Assets\Script\scoreboard.cs" />
+    <Compile Include="Assets\Script\showKeyboard.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\DeviceInterface.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\DistortionMesh.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRCanvas.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRController.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRCurveControlledBob.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRDevice.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRFirstPersonController.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRHeadBob.cs" />
+    <Compile Include="Assets\ThreeGlasses\Scripts\SZVRLerpControlledBob.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\AddComponentsToTargets.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\BitmaskAttribute.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\FingerButton.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\Hand\Fingertip.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\Hand\HandProperties.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\KeyButton.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\Keyboard.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\MathSupplement.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\ReparentObject.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\TestClasses\FingerButtonTest.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\Tweening\TweenMaterialColor.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\WristMenu.cs" />
+    <Compile Include="Assets\VRkeyboard\Scripts\WristMenuPoseDetector.cs" />
+    <Compile Include="Assets\iowDLLTest.cs" />
+    <Compile Include="Assets\triggerControler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\LM\LeapMotion\Dependencies.txt" />
+    <None Include="Assets\LM\LeapMotion\README_BEFORE_UPDATING.txt" />
+    <None Include="Assets\LM\LeapMotion\Resources\LeapCG.cginc" />
+    <None Include="Assets\LM\LeapMotion\Resources\PassthroughBackground.shader" />
+    <None Include="Assets\LM\LeapMotion\Resources\PassthroughForeground.shader" />
+    <None Include="Assets\LM\LeapMotion\Resources\ThresholdOverlay.shader" />
+    <None Include="Assets\LM\LeapMotion\Version.txt" />
+    <None Include="Assets\LM\LeapMotion\readme.txt" />
+    <None Include="Assets\LM\Plugins\donotdelete.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+    <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+    <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+    <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+    <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+    <None Include="Assets\NGUI\ReadMe - 3.9.4.txt" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\Resourse\SimpleCloudSystem by RM\Read Me.txt" />
+    <None Include="Assets\Resourse\SimpleCloudSystem by RM\SCS Instructions.txt" />
+    <None Include="Assets\Resourse\SimplePhysicalShader\SimplePhysicalShader.shader" />
+    <None Include="Assets\Resourse\SimplePhysicalShader\SimplePhysicalShaderCoat.shader" />
+    <None Include="Assets\Resourse\SimplePhysicalShader\SimplePhysicalShaderRetro.shader" />
+    <None Include="Assets\ThreeGlasses\Shader\DistortionMesh.shader" />
+    <None Include="Assets\ThreeGlasses\Shader\NewDistortionMesh.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
